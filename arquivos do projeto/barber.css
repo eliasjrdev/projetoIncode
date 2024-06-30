@@ -25,7 +25,7 @@ header{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url(img/img1.jpg);
+    background-image: url(img/cadeirabarb.avif);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,7 +37,7 @@ header{
 
 .sombra{
     position: absolute;
-    background-color: #401f149f;
+    background-color: rgba(0, 0, 0, 0.309);
     width: 100%;
     height: 100%;
     
@@ -54,7 +54,7 @@ nav{
     font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.327);
+    background-color: #1414149d;
     z-index: 1;
     border: 2px;
     padding-left: 10px;
@@ -69,11 +69,18 @@ nav ul{
 }
 
 nav ul li{
-    background-color:#615D5D;
+    background-color:transparent;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     text-shadow: 1px 1px 1px black;
+    border-radius: 5px;
+
 }
+
+nav ul li:hover{
+    text-decoration: underline;
+}
+
 
 nav ul li a{
     text-decoration: none;
@@ -104,7 +111,6 @@ nav ul li a{
     align-items: center;
     justify-content: center;
     z-index: 1;
-    
 }
 
 .titulo h1{
@@ -118,6 +124,7 @@ nav ul li a{
 }
 
 .titulo span{
+    padding: 1%;
     height: 10%;
     display: flex;
     justify-content: center;
@@ -133,13 +140,26 @@ nav ul li a{
 
 .agendHorario{
     padding: 20px;
+    width: 50%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .agendHorario button{
-    width: 100%;
     padding: 15px;
-    background-color: #FAAF4A;
+    background-color: #501611;
+    border-radius: 7px;
+    text-shadow: 1px 1px 1px rgb(9, 9, 9);
+    cursor: pointer;
 }
+
+.agendHorario button:hover{
+    padding: 3%;
+    transition: 0.5s;
+}
+
 
 .agendHorario button a{
     text-decoration: none;
@@ -148,6 +168,7 @@ nav ul li a{
     font-size: 20px;
     font-weight: 600;
     text-shadow: 1px 1px 1px black;
+    width: 100%;
 }
 
 /* SESSÓES */
@@ -156,7 +177,6 @@ nav ul li a{
     width: 100%;
     height: 60vh;
     display: flex;
-  
 }
 
 .textBemvindo{
@@ -236,7 +256,7 @@ nav ul li a{
 }
 
 #semana li {
-    background-color:#615D5D;
+    background-color:#501611;
     width: 75%;
     margin-bottom: 10px;
     display: flex;
@@ -329,8 +349,13 @@ nav ul li a{
     height: 230px;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border: 6px solid #615d5d;
+    border: 6px solid #20100A;
 }
+
+.serviços .menuServiços .preco{
+    font-size: 15px;
+}
+
 
 .containerProfissionais{
     width: 100vw;
@@ -365,7 +390,7 @@ nav ul li a{
 .containerProfissionais .cardsProfiss img{
     width:50%;
     height: 60%;
-    border: 5px solid #615d5d;
+    border: 5px solid #20100A;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -400,4 +425,42 @@ nav ul li a{
 .mpstyle{
     width: 70%;
     height: 80%;
+}
+
+footer{
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #15121374;
+}
+
+.redesSociais{
+    width: 50%;
+    height: 100%;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: var(--fonte-secundaria);
+
+}
+
+.redesSociais a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* RESPONSIVIDADE */
+
+@media (min-width:480px) and (max-width:1055px){
+    nav ul{
+        width: 80%;
+        font-size: 70%;
+        border: 2px solid red;
+    }
 }
