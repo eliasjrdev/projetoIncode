@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+:root {
+    --fonte-primaria: 'Playfair Display SC', serif;
+    --fonte-secundaria: 'Montserrat Alternates', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #32190F;
+    font-size: 16px;
+    color: white;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/img1.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sombra{
+    position: absolute;
+    background-color: #401f149f;
+    width: 100%;
+    height: 100%;
+    
+    z-index: 0;
+}
+
+nav{
+    
+    width: 80vw;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.327);
+    z-index: 1;
+    border: 2px;
+    padding-left: 10px;
+}
+
+nav ul{
+    list-style: none;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li{
+    background-color:#615D5D;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-shadow: 1px 1px 1px black;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+}
+
+.logo{
+
+    width: 90px;
+    height: 80%;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo{
+    width: 100vw;
+    height: 60%;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    
+}
+
+.titulo h1{
+    font-family: var(--fonte-primaria);
+    font-size: 6rem;
+}
+
+.titulo h2{
+    font-family: var(--fonte-secundaria);
+    font-size: 2.5rem;
+}
+
+.titulo span{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonte-secundaria);
+    font-weight: 800;
+}
+
+.icons{
+    font-size: 1.2rem;
+    color: #ffce0c;
+}
+
+.agendHorario{
+    padding: 20px;
+}
+
+.agendHorario button{
+    width: 100%;
+    padding: 15px;
+    background-color: #FAAF4A;
+}
+
+.agendHorario button a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--fonte-secundaria);
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* SESSÓES */
+
+.menuhorarios{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+  
+}
+
+.textBemvindo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fonte-primaria);
+}
+
+.textBemvindo p{
+    font-family: var(--fonte-secundaria);
+    height: 70%;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+}
+
+.sombraHorarios{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.359);
+}
+
+.imgshorarios{
+    flex: 1;
+    display: flex;
+}
+
+.inImgs{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.imgshorarios img{
+    width: 90%;
+    height: 80%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.horarios {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fonte-primaria);
+}
+
+.listhr{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.listhr ul{
+    height: 100%;
+    width: 100%;
+    line-height: 2em;
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+#semana li {
+    background-color:#615D5D;
+    width: 75%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-shadow: 2px 2px 1px black;
+}
+
+#horas li {
+    background-color:white;
+    color: black;
+    font-weight: 700;
+    width: 75%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.serviços{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #33353644;
+    padding-top: 10px;
+}
+
+.serviços h2{
+    font-family: var(--fonte-primaria);
+    font-size:2.5rem ;
+    padding: 20px;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.serviços .menuServiços{
+    width: 100%;
+    height: 90%;
+}
+
+.serviços .menuServiços ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.serviços .menuServiços li{
+    width: 100%;
+    height: 100%;
+}
+
+.serviços .menuServiços ul div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    
+}
+
+.serviços .menuServiços ul div span{
+    padding: 10px;
+
+}
+
+.serviços .menuServiços ul div button{
+    padding: 7px;
+    font-size: 1rem;
+    font-family: var(--fonte-secundaria);
+    background-color:#ed844a;
+    border: none;
+    color: white;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.serviços .menuServiços ul div img{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 6px solid #615d5d;
+}
+
+.containerProfissionais{
+    width: 100vw;
+    height: 100vh;
+}
+
+.containerCards{
+    display: flex;
+    width: 100%;
+    height: 85%;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.containerProfissionais .TituloProfissionais{
+    width: 100vw;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonte-primaria);
+    font-size:1.5rem ;
+}
+
+.containerProfissionais .cardsProfiss{
+    width: 35vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerProfissionais .cardsProfiss img{
+    width:50%;
+    height: 60%;
+    border: 5px solid #615d5d;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.containerProfissionais .cardsProfiss h2{
+    font-family: var(--fonte-primaria);
+    padding: 15px;
+    color: #ed844a;
+}
+
+.containerProfissionais .cardsProfiss h3{
+    text-align:center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    line-height: 27px;
+    padding: 15px;
+}
+
+.mp{
+    background-color: #33353644;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size:1.5rem ;
+    font-family: var(--fonte-primaria);
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.mpstyle{
+    width: 70%;
+    height: 80%;
+}

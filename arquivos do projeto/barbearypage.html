@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbeary Page</title>
+    <link rel="stylesheet" href="barber.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBj1dogxCkeaXgTX4hBdcsHy4WrYYiVL9c&callback=initMap">
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="sombra">
+    
+        </div>
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <ul>
+                <li><a href="#hr">Sobre nós</a></li>
+                <li><a href="#serv">Serviços</a></li>
+                <li><a href="#prof">Profissionais</a></li>
+                <li><a href="#mp">Localização</a></li>
+            </ul>
+        </nav>
+
+        <div class="titulo">
+            <h1>Sr Guimarães </h1>
+            <h2>Barbearia</h2>
+            <span>A barbearia mais bem avaliada da região</span>
+            <div class="icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+            </div>
+            <div class="agendHorario">
+                <button><a href="">Agende seu Horário (Clique aqui)</a></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="menuhorarios" id="hr">
+        <div class="textBemvindo">
+            <h2>SEJA BEM VINDO</h2>
+            <br>
+            <p>Nós somos uma barbearia fictícia que se preocupa com a sua aparência. Com uma equipe qualificada e
+                experiente, usamos apenas produtos de alta qualidade para garantir que seu cabelo e barba estejam sempre
+                saudáveis e brilhantes. Venha nos visitar e descubra por que somos a melhor barbearia da cidade!</p>
+        </div>
+
+        <div class="imgshorarios">
+            <div class="inImgs">
+                <img src="img/photo-1599351431202-1e0f0137899a.jpeg" alt="imagem de um barbeiro">
+                <div class="sombraHorarios">
+
+                </div>
+            </div>
+
+            <div class="inImgs">
+                <img src="img/istockphoto-1352346836-1024x1024-transformed.jpeg" alt="imagem de um barbeiro">
+                <div class="sombraHorarios">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="horarios">
+            <h2>Nossos Horários</h2>
+            <br>
+            <div class="listhr">
+                <ul id="semana">
+                    <li>Segunda</li>
+                    <li>Terça</li>
+                    <li>Quarta</li>
+                    <li>Quinta</li>
+                    <li>Sexta</li>
+                    <li>Sábado </li>
+                </ul>
+                <ul id="horas">
+                    <li>09h - 20h</li>
+                    <li>09h - 20h</li>
+                    <li>09h - 20h</li>
+                    <li>09h - 20h</li>
+                    <li>09h - 20h</li>
+                    <li>09h - 20h</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="serviços" id="serv">
+        <h2>Nossos Serviços</h2>
+        <div class="menuServiços">
+            <ul>
+                <li>
+                    <div>
+                        <img src="img/barbeiro-fazendo-a-barba-de-um-homem-em-uma-barbearia_1212-2694.avif"
+                            alt="Imagens de um barbeiro fazendo uma barba">
+                        <span>Barba</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/cliente-fazendo-o-corte-de-cabelo-em-um-salao-de-barbearia_1303-20824.avif"
+                            alt="Imagem de um barbeiro cortando cabelo">
+                        <span>Corte</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/cabeleireiro-lavando-o-cabelo-de-um-cliente-em-uma-barbearia_1303-20680.avif"
+                            alt="Imagem de um barbeiro lavando um cabelo">
+                        <span>Lavagem</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="img/11729912-barbeiro-preparando-o-rosto-do-homem-para-fazer-a-barba-com-toalha-quente-na-barbearia-foto.jpeg"
+                            alt="Imagem de um barbeiro hidratando uma barba">
+                        <span>Hidratação</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="containerProfissionais" id="prof">
+        <div class="TituloProfissionais">
+            <h2>Nossos Profissionais</h2>
+        </div>
+
+        <div class="containerCards">
+            <div class="cardsProfiss">
+                <img src="img/barbeiro1.jpeg" alt="imagem de um barbeiro">
+                <h2>Ruan Silva</h2>
+                <h3>Profissional Com <br>mais de 10 anos de experiencia no mercado.<br> especialista em cortes
+                    degradês<br> em todos os tipos de cabelo. </h3>
+            </div>
+            <div class="cardsProfiss">
+                <img src="img/barbeiro2.jpeg" alt="imagem de um barbeiro">
+                <h2>Alonso Pascoal</h2>
+                <h3>Profissional com<br>mais de 7 anos de mercado. <br>É autenticado pela academia de barbeiros do
+                    maranhão.</h3>
+            </div>
+            <div class="cardsProfiss">
+                <img src="img/barbeiro3.jpeg" alt="imagem de um barbeiro">
+                <h2>Bruno Vicent</h2>
+                <h3>Profissional com <br>mais de 5 anos de experiencia na área.<br> Especialista em <br>cabelos Afro,
+                    barba e sombrancelha</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="mp" id="mp">
+        <h2>Nossa Localização</h2>
+        <div id="mapa" class="mpstyle">
+
+        </div>
+    </section>
+
+    <footer>
+        
+    </footer>
+</body>
+<script src="barbearydoc.js"></script>
+
+</html>
