@@ -458,9 +458,71 @@ footer{
 /* RESPONSIVIDADE */
 
 @media (min-width:480px) and (max-width:1055px){
+    body{
+        width: 100vw;
+        height: 60vh;
+    }
+
     nav ul{
         width: 80%;
         font-size: 70%;
-        border: 2px solid red;
+    }
+
+    nav{
+        display: none;
+    }
+
+    header{
+        height: 60vh;
+        background-size: contain;
+    }
+
+    .titulo h1{
+        font-family: var(--fonte-primaria);
+        font-size: 3rem;
+    }
+
+    .titulo h2{
+        font-family: var(--fonte-secundaria);
+        font-size: 2rem;
+    }
+    
+    .titulo span{
+        padding: 1%;
+        height: 10%;
+        font-size: 0.7rem;
+    }
+
+    .icons{
+        font-size: 1rem;
+        color: #ffce0c;
+    }
+
+    .agendHorario{
+        padding: 10px;
+        width: 50%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .agendHorario button{
+        padding: 15px;
+        background-color: #501611;
+        border-radius: 7px;
+        text-shadow: 1px 1px 1px rgb(9, 9, 9);
+        cursor: pointer;
+    } 
+    
+    .agendHorario button a{
+        text-decoration: none;
+        color: white;
+        font-family: var(--fonte-secundaria);
+        font-size: 12px;
+        font-weight: 600;
+        text-shadow: 1px 1px 1px black;
+        width: 100%;
     }
 }
+
