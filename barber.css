@@ -467,7 +467,6 @@ footer{
         height: 60%;
         background-size: contain;
         display: flex;
-        border: 2px solid red;
     }
 
     nav{
@@ -531,7 +530,6 @@ footer{
     .menuhorarios{
         display: flex;
         flex-direction: column;
-        border: 2px solid red;
         height: 100vh;
     }
 
@@ -552,10 +550,6 @@ footer{
     .horarios h2{
         font-size: 1.5rem;
 
-    }
-
-    .listhr{
-        border: 2px solid red;
     }
 
     .listhr ul{
@@ -590,7 +584,7 @@ footer{
         height: 100%;
         display: flex;
         flex-direction: column;
-        border: 2px solid red;
+
     }
 
     .serviços .menuServiços ul {
