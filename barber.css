@@ -526,5 +526,90 @@ footer{
         text-shadow: 1px 1px 1px black;
         width: 100%;
     }
+
+    .menuhorarios{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .textBemvindo p{
+        font-size: 1rem;
+    }
+
+    .imgshorarios{
+        display: flex;
+    }
+
+    .horarios {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .horarios h2{
+        font-size: 1.5rem;
+
+    }
+
+    .listhr ul{
+        height: 100%;
+        width: 100%;
+        line-height: 2em;
+        font-family: var(--fonte-secundaria);
+        font-size: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+    }
+
+    .serviços{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #33353644;
+        padding-top: 10px;
+    }
+
+    .serviços h2{
+        font-size: 1.5rem;
+    }
+
+    .serviços .menuServiços{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .serviços .menuServiços ul {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+    }
+
+    .containerProfissionais{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+    }
+
+    .containerCards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mp{
+        height: 100vh;
+    }
 }
 
