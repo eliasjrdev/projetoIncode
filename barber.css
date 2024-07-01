@@ -460,7 +460,7 @@ footer{
 @media (min-width:375px) and (max-width:1055px){
     body{
         width: 100vw;
-        height: 100vh;
+        height: 60vh;
     }
 
     nav{
@@ -468,15 +468,12 @@ footer{
     }
 
     header{
-        height: 60vh;
+        height: 100vh;
         background-size: contain;
         display: flex;
-        align-items: ;
-        border: 2px solid red;
     }
 
     .titulo{
-        border: 2px solid rgb(26, 255, 0);
         height: 50%;
     }
 
