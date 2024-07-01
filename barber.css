@@ -460,21 +460,24 @@ footer{
 @media (min-width:375px) and (max-width:1055px){
     body{
         width: 100vw;
-        height: 60vh;
+        height: 100vh;
+    }
+
+    header{
+        height: 60%;
+        background-size: contain;
+        display: flex;
     }
 
     nav{
         display: none;
     }
 
-    header{
-        height: 100vh;
-        background-size: contain;
-        display: flex;
-    }
-
     .titulo{
-        height: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .titulo h1{
@@ -486,20 +489,21 @@ footer{
     }
     
     .titulo span{
-        padding: 1%;
-        height: 8%;
+        padding: 0%;
+        height: 7%;
         font-size: 0.6rem;
     }
 
     .icons{
         font-size: 0.8rem;
         color: #ffce0c;
+        padding: 10px;
     }
 
     .agendHorario{
         padding: 2px;
         width: 60%;
-        height: 30%;
+        height: 5%;
         display: flex;
         align-items: center;
         justify-content: center;
