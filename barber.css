@@ -457,15 +457,10 @@ footer{
 
 /* RESPONSIVIDADE */
 
-@media (min-width:480px) and (max-width:1055px){
+@media (min-width:375px) and (max-width:1055px){
     body{
         width: 100vw;
-        height: 60vh;
-    }
-
-    nav ul{
-        width: 80%;
-        font-size: 70%;
+        height: 100vh;
     }
 
     nav{
@@ -475,40 +470,46 @@ footer{
     header{
         height: 60vh;
         background-size: contain;
+        display: flex;
+        align-items: ;
+        border: 2px solid red;
+    }
+
+    .titulo{
+        border: 2px solid rgb(26, 255, 0);
+        height: 50%;
     }
 
     .titulo h1{
-        font-family: var(--fonte-primaria);
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .titulo h2{
-        font-family: var(--fonte-secundaria);
-        font-size: 2rem;
+        font-size: 1rem;
     }
     
     .titulo span{
         padding: 1%;
-        height: 10%;
-        font-size: 0.7rem;
+        height: 8%;
+        font-size: 0.6rem;
     }
 
     .icons{
-        font-size: 1rem;
+        font-size: 0.8rem;
         color: #ffce0c;
     }
 
     .agendHorario{
-        padding: 10px;
-        width: 50%;
-        height: 60%;
+        padding: 2px;
+        width: 60%;
+        height: 30%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     
     .agendHorario button{
-        padding: 15px;
+        padding: 8px;
         background-color: #501611;
         border-radius: 7px;
         text-shadow: 1px 1px 1px rgb(9, 9, 9);
