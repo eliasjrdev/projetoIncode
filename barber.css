@@ -469,7 +469,7 @@ footer p{
 
 /* RESPONSIVIDADE */
 
-@media (min-width:375px) and (max-width:1055px){
+@media(min-width:375px) and (max-width:1055px){
     body{
         width: 100vw;
         height: 100%;
