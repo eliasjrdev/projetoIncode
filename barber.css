@@ -15,10 +15,13 @@
 
 body{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: #32190F;
     font-size: 16px;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header{
@@ -431,9 +434,14 @@ footer{
     height: 100px;
     width: 100vw;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #15121374;
+}
+
+footer p{
+    padding: 10px;
 }
 
 .redesSociais{
@@ -460,12 +468,15 @@ footer{
 @media(min-width:375px) and (max-width:1055px){
     body{
         width: 100vw;
-        height: 100vh;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     header{
         height: 60%;
-        background-size: contain;
+        background-size: cover;
+        background-attachment: scroll;
         display: flex;
     }
 
@@ -478,24 +489,25 @@ footer{
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 25px;
     }
 
     .titulo h1{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .titulo h2{
-        font-size: 1rem;
+        font-size: 1.8rem;
     }
     
     .titulo span{
         padding: 0%;
         height: 7%;
-        font-size: 0.6rem;
+        font-size: 0.8rem;
     }
 
     .icons{
-        font-size: 0.8rem;
+        font-size: 1rem;
         color: #ffce0c;
         padding: 10px;
     }
@@ -530,34 +542,40 @@ footer{
     .menuhorarios{
         display: flex;
         flex-direction: column;
-        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        height: 800px;
     }
 
     .textBemvindo p{
         font-size: 1rem;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .textBemvindo h2{
+        margin-top: 10px;
     }
 
     .imgshorarios{
         display: flex;
+        width: 100%;
     }
 
     .horarios {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
+        width: 100%;
     }
 
     .horarios h2{
         font-size: 1.5rem;
-
     }
 
     .listhr ul{
-        height: 100%;
+        height: 220px;
         width: 100%;
         line-height: 2em;
         font-family: var(--fonte-secundaria);
-        font-size: 0.5rem;
+        font-size: 0.7rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -566,7 +584,8 @@ footer{
     }
 
     .serviços{
-        height: 100vh;
+        position: relative;
+        height: 1500px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -584,12 +603,11 @@ footer{
         height: 100%;
         display: flex;
         flex-direction: column;
-
     }
 
-    .serviços .menuServiços ul {
+    .serviços .menuServiços ul{
         width: 100%;
-        height: 100vh;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -597,19 +615,77 @@ footer{
         list-style: none;
     }
 
-    .containerProfissionais{
-        width: 100vw;
-        height: 100vh;
-        display: flex;
+    .serviços .menuServiços ul li div{
+        width: 100%;
+        position: relative;
     }
 
-    .containerCards{
+    .serviços .menuServiços ul div img{
+        width: 230px;
+        height: 230px;
+    }
+
+    .containerProfissionais{
+        width: 100vw;
+        height: 100%;
         display: flex;
         flex-direction: column;
     }
 
+    .containerCards{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .containerProfissionais .TituloProfissionais{
+        font-size:1rem ;
+        padding: 10px;
+    }
+
+
+    .containerProfissionais .cardsProfiss{
+        width: 100%;
+    }
+
+    
+
     .mp{
         height: 100vh;
+        width: 95vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mpstyle{
+        height: 90%;
+        width: 100%;
+    }
+
+    .mp h2{
+        font-size: 1.5rem;
+        padding-bottom: 20px;
+    }
+
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer p{
+        padding: 10px;
+    }
+
+    footer .redesSociais{
+        width: 100%;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
     }
 }
 
