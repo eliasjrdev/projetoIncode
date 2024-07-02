@@ -15,6 +15,18 @@ function initMap() {
   });
 }
 
+function initMap() {
+  const barbearia = { lat: -2.51386, lng: -44.30448 }; // Latitude e Longitude da barbearia
+  const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 15,
+      center: barbearia,
+  });
+  const marker = new google.maps.Marker({
+      position: barbearia,
+      map: map,
+  });
+}
+
 
 
 

@@ -430,6 +430,10 @@ nav ul li a{
     height: 80%;
 }
 
+.gps{
+    display: none;
+}
+
 footer{
     height: 100px;
     width: 100vw;
@@ -514,11 +518,12 @@ footer p{
 
     .agendHorario{
         padding: 2px;
-        width: 60%;
+        width: 70%;
         height: 5%;
         display: flex;
         align-items: center;
         justify-content: center;
+        
     }
     
     .agendHorario button{
@@ -527,6 +532,7 @@ footer p{
         border-radius: 7px;
         text-shadow: 1px 1px 1px rgb(9, 9, 9);
         cursor: pointer;
+        width: 100%;
     } 
     
     .agendHorario button a{
@@ -668,6 +674,21 @@ footer p{
     .mp h2{
         font-size: 1.5rem;
         padding-bottom: 20px;
+    }
+
+    .gps{
+        display: block;
+    }
+
+    .gps button{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        background-color: rgba(255, 255, 255, 0.284);
+        color: white;
+        border-radius: 5px;
     }
 
     footer{
