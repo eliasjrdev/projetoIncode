@@ -514,11 +514,12 @@ footer p{
 
     .agendHorario{
         padding: 2px;
-        width: 60%;
+        width: 70%;
         height: 5%;
         display: flex;
         align-items: center;
         justify-content: center;
+        
     }
     
     .agendHorario button{
@@ -527,6 +528,7 @@ footer p{
         border-radius: 7px;
         text-shadow: 1px 1px 1px rgb(9, 9, 9);
         cursor: pointer;
+        width: 100%;
     } 
     
     .agendHorario button a{
