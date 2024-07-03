@@ -691,6 +691,10 @@ footer p{
         border-radius: 5px;
     }
 
+    .gps a{
+        text-decoration: none;
+    }
+
     footer{
         width: 100%;
         display: flex;
