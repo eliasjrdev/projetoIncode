@@ -1,4 +1,4 @@
-function initMap() {
+/*function initMap() {
   var location = { lat: -2.51386, lng: -44.30448 }; // Coordenadas de latitude e longitude do local desejado
   
   var mapOptions = {
@@ -12,6 +12,19 @@ function initMap() {
     position: location, // Definindo a posição do marcador como o local desejado
     map: map,
     title: 'Barbearia'
+  });
+}*/
+
+function initMap() {
+  var barbeariaLocation = {lat: -2.51386, lng: -44.30448};  
+  var map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 15,
+      center: barbeariaLocation
+  });
+  var marker = new google.maps.Marker({
+      position: barbeariaLocation,
+      map: map,
+      title: 'Nossa localização'
   });
 }
 

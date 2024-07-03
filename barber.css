@@ -414,7 +414,7 @@ nav ul li a{
 .mp{
     background-color: #33353644;
     width: 100vw;
-    height: 100vh;
+    height: 400vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -424,14 +424,15 @@ nav ul li a{
     text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.mpstyle{
+    width: 100%;
+    height: 100%;
+}
+
 
 .mpstyle{
     width: 70%;
     height: 80%;
-}
-
-.gps{
-    display: none;
 }
 
 footer{
@@ -665,6 +666,7 @@ footer p{
         display: flex;
         align-items: center;
         justify-content: center;
+        
     }
 
     .mpstyle{
@@ -695,6 +697,7 @@ footer p{
 
     .gps a{
         text-decoration: none;
+
     }
 
     footer{
